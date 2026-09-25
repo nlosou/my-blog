@@ -1,0 +1,37 @@
+# ============================================================
+# my-blog 站点配置示例
+# 修改后重新运行：python3 scripts/build.py
+# ============================================================
+
+site:
+  # 站点名称，显示在页头和浏览器标题栏
+  title: "NOSER Is Not Only Embedded Systems Research"
+
+  # 站点描述，用于 <meta name="description"> 和 RSS 描述
+  description: "想到什么就记什么"
+
+  # 作者名，显示在页脚与 Feed 中
+  author: "Noser"
+
+  # 站点基础地址（必须带协议，末尾不带斜杠由生成器处理）
+  # 用户站点：https://USERNAME.github.io/
+  # 项目站点：https://USERNAME.github.io/REPO/
+  # 自定义域名：https://example.com/
+  base_url: "https://noser.github.io/my-blog/"
+
+  # 页面语言（<html lang> 与 RSS language）
+  language: "zh-CN"
+
+  # 时区偏移，用于 Atom/RSS 的日期格式
+  timezone_offset: "+08:00"
+
+  # 文章目录（TOC）
+  # toc: 是否默认在文章顶部显示目录；单篇文章可用 front matter 的 toc: false 覆盖
+  toc: true
+  # toc_depth: 收集哪些级别的标题，'2-4' 表示 <h2> 到 <h4>（文章标题 h1 已在外层渲染）
+  toc_depth: "2-4"
+
+  # 自定义域名（可选）
+  # 填写后构建会生成 CNAME 文件，用于 GitHub Pages 自定义域名
+  # 例如 "example.com"；留空则不生成
+  cname: ""

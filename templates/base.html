@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="{{language}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="generator" content="my-blog">
+  <link rel="stylesheet" href="{{root}}/style.css">
+  <link rel="alternate" type="application/atom+xml" title="{{site_title}} Atom" href="{{root}}/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{site_title}} RSS" href="{{root}}/rss.xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{root}}/">{{site_title}}</a>
+    <nav>
+      <a href="{{root}}/">首页</a>
+      <a href="{{root}}/archive/">归档</a>
+      <a href="{{root}}/tags/">标签</a>
+      <a href="{{root}}/about/">关于</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© {{year}} {{author}} · <a href="{{root}}/atom.xml">Atom</a> / <a href="{{root}}/rss.xml">RSS</a></p>
+  </div>
+</footer>
+</body>
+</html>
